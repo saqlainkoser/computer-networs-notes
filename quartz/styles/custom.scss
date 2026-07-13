@@ -1,0 +1,19 @@
+@use "./variables.scss" as *;
+
+// put your custom CSS here!
+mark {
+  background-color: var(--textHighlight);
+  color: var(--darkgray); // lighter, easy-to-read text
+}
+
+.internal-link {
+    background: #8428766f !important;
+    color: white !important;
+    padding: 3px 8px;
+    border-radius: 6px;
+}
+
+.internal-link:hover {
+    background: #25b0eb !important;
+    color: white !important;
+}
