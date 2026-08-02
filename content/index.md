@@ -22,7 +22,7 @@ Welcome to my complete set of Computer Networking notes, compiled while learning
 ### Models & Devices
 
 - [[6. OSI Model]]
-- [[7. TCP/IP Model]]
+- [[7. TCP_iP Model]]
 - [[8. Network Devices]]
 - [[9. Gateway & Repeater]]
 
