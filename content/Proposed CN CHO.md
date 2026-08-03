@@ -1,27 +1,4 @@
 
-| **Lecture Number** | Topics                                                                                                                                                                        |
-| ------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1-3                | Introduction to Computer Networks – Definition, benefits, and applications of networking, Basic components of a network: nodes, links, and servers                            |
-| 4-6                | Types of Networks – LAN, WAN, MAN, PAN with examples and use cases, Difference between Intranet and Internet as network scopes                                                |
-| 7-9                | Network Topologies – Bus, Star, Ring, Mesh, Hybrid – structure, advantages, and disadvantages,                                                                                |
-| 10-14              | Network Models – Overview of OSI (7-layer) and TCP/IP (4-layer) models; basic functions of each layer.                                                                        |
-| 15-17              | Network Devices – Roles of Router, Switch, Hub, Modem, and Access Point, Role of Gateway and Repeater in a network                                                            |
-| 18-20              | IP Addressing Basics – IPv4 address format, classes, and significance, Introduction to IPv6: purpose and basic format (awareness level)                                       |
-| 21-23              | Basic Subnetting – Simple explanation of subnetting and subnet masks (no deep calculations), Concept of Public vs. Private IP addresses                                       |
-| 24-26              | Data Transmission Modes – Simplex, Half-duplex, Full-duplex communication, Real-world examples of each mode (e.g., radio, walkie-talkie, telephone)                           |
-| 27-30              | Analog vs Digital Signals – Basic idea with examples and differences, Concept of bandwidth in relation to signal transmission                                                 |
-| 31-33              | Networking Protocols – Introduction to HTTP, FTP, SMTP, TCP, UDP, IP and their basic roles, Basic idea of HTTPS and DNS and their everyday relevance                          |
-| 34-36              | Wireless Networking – Wi-Fi, Bluetooth, Cellular networks, and basic security concerns.                                                                                       |
-| 37-40              | Network Security Basics – Threats like hacking, malware; protections like firewalls, passwords.                                                                               |
-| 41-43              | Internet Fundamentals – What is the Internet, how it works, use of web browsers and search engines, Role of ISPs (Internet Service Providers) in connecting to the Internet   |
-| 44-46              | Cloud Computing Introduction – Concept, benefits, and tools like Google Drive and Dropbox, Basic types of cloud services (IaaS, PaaS, SaaS)                                   |
-| 47-50              | Networking Tools & Commands – Use of ping, tracert, ipconfig and their functions                                                                                              |
-| 50-55              | Network Troubleshooting Basics – Common steps: checking cables, IP settings, restarting, Identifying connectivity issues using ping and tracert results                       |
-| 56-60              | Cloud & Edge Computing: Role of networking in AI-driven cloud applications, AI & ML in Networking – Traffic prediction, anomaly detection, and network optimization using AI. |
-
-
-
-
 
 
 |       |                                     |                                                                                                                                                                               |                                         |
