@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DevNotes Admin</title>
+<link rel="stylesheet" href="./admin.css"/>
+</head>
+<body>
+<header class="topbar">
+  <div class="brand">
+    <span class="logo">DN</span>
+    <div>
+      <h1>DevNotes Admin</h1>
+      <p class="sub">Computer Networking notes</p>
+    </div>
+  </div>
+  <div class="actions">
+    <span id="status-pill" class="pill hidden"></span>
+    <button id="btn-view" class="btn ghost" title="Open published site">View site</button>
+    <button id="btn-rebuild" class="btn" title="Rebuild the local site (quartz build)">Rebuild</button>
+    <button id="btn-publish" class="btn primary" title="Commit content and push to GitHub (deploys to Pages)">Publish</button>
+    <button id="btn-logout" class="btn ghost" title="Sign out">Log out</button>
+  </div>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="search-row">
+      <input id="note-search" type="search" placeholder="Filter notes…" autocomplete="off"/>
+      <button id="btn-new" class="btn small" title="Create a new note">+ New</button>
+    </div>
+    <ul id="note-list" class="note-list"></ul>
+  </aside>
+
+  <main class="editor-pane">
+    <div id="empty-state" class="empty">
+      <h2>Select or create a note</h2>
+      <p>Pick a note from the list, or click <strong>+ New</strong> to start writing.</p>
+      <p class="hint">Use <code>[[Note Name]]</code> to link other notes — type <code>[[</code> to get suggestions.</p>
+    </div>
+
+    <div id="editor" class="hidden">
+      <div class="editor-head">
+        <div class="path" id="note-path"></div>
+        <div class="meta" id="note-meta"></div>
+      </div>
+      <div class="editor-body">
+        <textarea id="note-content" spellcheck="false" placeholder="Write markdown here…"></textarea>
+        <div id="wl-popup" class="wl-popup hidden"></div>
+      </div>
+      <div class="editor-foot">
+        <span id="char-count" class="count"></span>
+        <span class="spacer"></span>
+        <button id="btn-delete" class="btn danger">Delete note</button>
+        <button id="btn-save" class="btn primary">Save</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div id="new-modal" class="modal hidden">
+  <div class="modal-card">
+    <h3>New note</h3>
+    <p class="sub">The name becomes the filename and the <code>[[wikilink]]</code> to use.</p>
+    <input id="new-name" type="text" placeholder="e.g. 17. Networking Protocols" autocomplete="off"/>
+    <div class="modal-actions">
+      <button id="btn-cancel-new" class="btn ghost">Cancel</button>
+      <button id="btn-confirm-new" class="btn primary">Create</button>
+    </div>
+    <p id="new-error" class="error hidden"></p>
+  </div>
+</div>
+
+<div id="confirm-modal" class="modal hidden">
+  <div class="modal-card">
+    <h3 id="confirm-title">Are you sure?</h3>
+    <p id="confirm-text" class="sub"></p>
+    <div class="modal-actions">
+      <button id="btn-cancel-confirm" class="btn ghost">Cancel</button>
+      <button id="btn-ok-confirm" class="btn danger">Confirm</button>
+    </div>
+  </div>
+</div>
+
+<textarea id="caret-mirror" class="caret-mirror" aria-hidden="true"></textarea>
+
+<script src="./admin.js" type="module"></script>
+</body>
+</html>
