@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Cloud Computing - Introduction Notes</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    line-height: 1.65;
+    color: #1f2937;
+    background: #fdfdfd;
+  }
+  h1 {
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(90deg, #0ea5e9, #6366f1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  h2 {
+    color: #ffffff;
+    background: #0284c7;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-top: 40px;
+  }
+  h3 {
+    color: #6366f1;
+    border-bottom: 2px solid #c7d2fe;
+    padding-bottom: 4px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+  }
+  th {
+    background: #1e293b;
+    color: white;
+    padding: 8px 10px;
+    text-align: left;
+  }
+  td {
+    padding: 8px 10px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  tr:nth-child(even) {
+    background: #f3f4f6;
+  }
+  .term { background: #fef08a; padding: 2px 5px; border-radius: 4px; font-weight: 600; }        /* yellow */
+  .def  { background: #bbf7d0; padding: 2px 5px; border-radius: 4px; }                          /* green */
+  .service { background: #bfdbfe; padding: 2px 5px; border-radius: 4px; font-weight: 600; }     /* blue */
+  .warning { background: #fecaca; padding: 2px 5px; border-radius: 4px; }                       /* red */
+  .note { background: #fed7aa; padding: 2px 5px; border-radius: 4px; }                          /* orange */
+  .key  { background: #e9d5ff; padding: 2px 5px; border-radius: 4px; font-weight: 600; }        /* purple */
+  .tool { background: #99f6e4; padding: 2px 5px; border-radius: 4px; font-weight: 600; }        /* teal */
+  .code-block {
+    background: #0f172a;
+    color: #7dd3fc;
+    padding: 14px 18px;
+    border-radius: 8px;
+    font-family: 'Consolas', monospace;
+    overflow-x: auto;
+    white-space: pre;
+  }
+  ul, ol { margin-left: 6px; }
+  li { margin-bottom: 6px; }
+  hr { border: none; border-top: 2px dashed #cbd5e1; margin: 30px 0; }
+  .layer-box {
+    padding: 14px 18px;
+    border-radius: 8px;
+    margin: 10px 0;
+    font-weight: 600;
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+
+<h1>☁️ Cloud Computing — Introduction</h1>
+
+<h2>1. Concept of Cloud Computing</h2>
+<p><span class="term">Cloud Computing</span> is the <span class="def">delivery of computing services — servers, storage, databases, networking, software, and analytics — over the Internet ("the cloud")</span> instead of using local computers or personal servers/hard drives.</p>
+
+<p>In simple terms: instead of storing files or running programs on your own device, you use <span class="key">remote servers hosted by a provider (like Google, Amazon, or Microsoft)</span>, accessed via the Internet, and you typically pay only for what you use.</p>
+
+<h3>1.1 Key Idea Behind the Concept</h3>
+<ul>
+  <li><span class="key">On-Demand</span>: Resources (storage, computing power) can be accessed anytime, from anywhere with an Internet connection.</li>
+  <li><span class="key">Shared Resources</span>: A pool of computing resources is shared among many users (multi-tenancy).</li>
+  <li><span class="key">Remote Servers</span>: Data and applications live on data centers owned by cloud providers, not on your personal device.</li>
+  <li><span class="key">Pay-as-you-go</span>: Most cloud services charge based on actual usage rather than a fixed cost.</li>
+</ul>
+
+<h3>1.2 Traditional Computing vs. Cloud Computing</h3>
+<table>
+  <tr><th>Traditional Computing</th><th>Cloud Computing</th></tr>
+  <tr><td>Data stored on local hard drives/servers</td><td>Data stored on <span class="def">remote servers via the Internet</span></td></tr>
+  <tr><td>Requires buying and maintaining hardware</td><td>No need to own physical hardware</td></tr>
+  <tr><td>Limited by local device storage/power</td><td><span class="def">Scalable</span> — expand resources as needed</td></tr>
+  <tr><td>Access only from the device where data is stored</td><td>Access <span class="def">from any device, anywhere</span></td></tr>
+  <tr><td>High upfront cost (hardware, licenses)</td><td><span class="def">Pay-as-you-go</span> pricing model</td></tr>
+</table>
+
+<h3>1.3 Essential Characteristics of Cloud Computing</h3>
+<table>
+  <tr><th>Characteristic</th><th>Meaning</th></tr>
+  <tr><td><span class="key">On-Demand Self-Service</span></td><td>Users can provision resources (storage, servers) automatically without human interaction with the provider</td></tr>
+  <tr><td><span class="key">Broad Network Access</span></td><td>Services are available over the Internet and accessible via multiple devices (phones, laptops, tablets)</td></tr>
+  <tr><td><span class="key">Resource Pooling</span></td><td>Provider's resources are pooled to serve multiple customers using a multi-tenant model</td></tr>
+  <tr><td><span class="key">Rapid Elasticity</span></td><td>Resources can be scaled up or down quickly based on demand</td></tr>
+  <tr><td><span class="key">Measured Service</span></td><td>Resource usage is monitored and billed transparently (pay only for what you use)</td></tr>
+</table>
+
+<hr>
+
+<h2>2. Benefits of Cloud Computing</h2>
+
+<table>
+  <tr><th>Benefit</th><th>Explanation</th></tr>
+  <tr><td><span class="term">Cost Savings</span></td><td>No need to purchase expensive hardware/servers; pay only for resources used</td></tr>
+  <tr><td><span class="term">Scalability</span></td><td>Easily scale storage/computing power up or down based on demand</td></tr>
+  <tr><td><span class="term">Accessibility</span></td><td>Access data and applications from <span class="def">anywhere, anytime</span>, on any Internet-connected device</td></tr>
+  <tr><td><span class="term">Automatic Updates</span></td><td>Cloud providers handle software updates and maintenance automatically</td></tr>
+  <tr><td><span class="term">Disaster Recovery & Backup</span></td><td>Data is backed up on remote servers, reducing risk of loss from local hardware failure</td></tr>
+  <tr><td><span class="term">Collaboration</span></td><td>Multiple users can work on the same files/documents simultaneously in real time</td></tr>
+  <tr><td><span class="term">Security</span></td><td>Reputable providers offer strong encryption, firewalls, and monitoring</td></tr>
+  <tr><td><span class="term">Environmentally Friendly</span></td><td>Shared infrastructure reduces overall energy consumption compared to many individual servers</td></tr>
+  <tr><td><span class="term">Flexibility & Mobility</span></td><td>Employees/students can work remotely, supporting mobile and hybrid work models</td></tr>
+</table>
+
+<div class="note" style="display:block; padding:12px 16px; margin-top:10px;">
+<b>Example:</b> A small business no longer needs to buy its own physical servers for storing customer data — it can rent cloud storage and scale up during busy seasons without investing in permanent infrastructure.
+</div>
+
+<hr>
+
+<h2>3. Popular Cloud Storage Tools</h2>
+<p>These are consumer/business-facing tools that use cloud computing to let users store, sync, and share files online.</p>
+
+<h3>3.1 Google Drive</h3>
+<ul>
+  <li><span class="tool">Provider</span>: Google</li>
+  <li><span class="tool">Function</span>: Cloud-based file storage and synchronization service</li>
+  <li><span class="tool">Key Features</span>:
+    <ul>
+      <li>Free storage (typically 15 GB shared across Google account) with paid upgrade plans</li>
+      <li>Integrated with <span class="def">Google Docs, Sheets, Slides</span> for real-time collaborative editing</li>
+      <li>File sharing via shareable links with customizable permissions (view/comment/edit)</li>
+      <li>Access from web browser, desktop app, or mobile app</li>
+      <li>Automatic sync across devices</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>3.2 Dropbox</h3>
+<ul>
+  <li><span class="tool">Provider</span>: Dropbox, Inc.</li>
+  <li><span class="tool">Function</span>: File hosting and synchronization service</li>
+  <li><span class="tool">Key Features</span>:
+    <ul>
+      <li>Simple drag-and-drop file upload/sync interface</li>
+      <li>File versioning and recovery of deleted files</li>
+      <li>Smart sync — access files without using local storage space</li>
+      <li>Third-party app integrations (Slack, Zoom, Microsoft Office)</li>
+      <li>Shared folders for team collaboration</li>
+    </ul>
+  </li>
+</ul>
+
+<h3>3.3 Other Common Cloud Tools</h3>
+<table>
+  <tr><th>Tool</th><th>Provider</th><th>Primary Use</th></tr>
+  <tr><td><span class="tool">OneDrive</span></td><td>Microsoft</td><td>File storage integrated with Windows & MS Office</td></tr>
+  <tr><td><span class="tool">iCloud</span></td><td>Apple</td><td>Storage and sync across Apple devices</td></tr>
+  <tr><td><span class="tool">Amazon Drive / AWS S3</span></td><td>Amazon</td><td>Personal and enterprise-grade cloud storage</td></tr>
+  <tr><td><span class="tool">Box</span></td><td>Box, Inc.</td><td>Enterprise file storage & collaboration</td></tr>
+</table>
+
+<hr>
+
+<h2>4. Basic Types of Cloud Services</h2>
+<p>Cloud services are generally divided into <span class="key">three main models</span>, often visualized as layers — each offering a different level of control vs. convenience.</p>
+
+<div class="layer-box" style="background:#fecaca;">SaaS – Software as a Service (Least control, most convenience)</div>
+<div class="layer-box" style="background:#fed7aa;">PaaS – Platform as a Service (Balanced)</div>
+<div class="layer-box" style="background:#bfdbfe;">IaaS – Infrastructure as a Service (Most control, least convenience)</div>
+
+<h3>4.1 IaaS (Infrastructure as a Service)</h3>
+<p><span class="service">Definition</span>: Provides <span class="def">virtualized computing infrastructure</span> — servers, storage, and networking — over the Internet. Users manage operating systems, applications, and data, while the provider manages the physical hardware.</p>
+<ul>
+  <li><b>What's Provided by Vendor:</b> Servers, storage, networking, virtualization</li>
+  <li><b>What User Manages:</b> Operating system, middleware, runtime, applications, data</li>
+  <li><b>Best For:</b> Companies needing flexible, scalable infrastructure without buying physical hardware</li>
+  <li><b>Examples:</b> <span class="tool">Amazon Web Services (AWS EC2)</span>, <span class="tool">Microsoft Azure</span>, <span class="tool">Google Compute Engine</span></li>
+</ul>
+
+<h3>4.2 PaaS (Platform as a Service)</h3>
+<p><span class="service">Definition</span>: Provides a <span class="def">platform allowing developers to build, test, and deploy applications</span> without worrying about underlying infrastructure (servers, storage, networking).</p>
+<ul>
+  <li><b>What's Provided by Vendor:</b> Servers, storage, networking, OS, runtime environment, development tools</li>
+  <li><b>What User Manages:</b> Applications and data only</li>
+  <li><b>Best For:</b> Developers who want to focus on coding/app development without managing servers</li>
+  <li><b>Examples:</b> <span class="tool">Google App Engine</span>, <span class="tool">Microsoft Azure App Service</span>, <span class="tool">Heroku</span></li>
+</ul>
+
+<h3>4.3 SaaS (Software as a Service)</h3>
+<p><span class="service">Definition</span>: Delivers <span class="def">fully functional software applications over the Internet</span>, accessible via a web browser, with no installation or maintenance required by the user.</p>
+<ul>
+  <li><b>What's Provided by Vendor:</b> Everything — infrastructure, platform, and the application itself</li>
+  <li><b>What User Manages:</b> Just their data/usage within the application</li>
+  <li><b>Best For:</b> End users/businesses who want ready-to-use software without technical setup</li>
+  <li><b>Examples:</b> <span class="tool">Google Workspace (Gmail, Docs)</span>, <span class="tool">Dropbox</span>, <span class="tool">Netflix</span>, <span class="tool">Microsoft 365</span>, <span class="tool">Zoom</span></li>
+</ul>
+
+<h3>4.4 Comparison Table: IaaS vs PaaS vs SaaS</h3>
+<table>
+  <tr><th>Feature</th><th>IaaS</th><th>PaaS</th><th>SaaS</th></tr>
+  <tr><td>Level of Control</td><td class="def">High</td><td class="note">Medium</td><td class="warning">Low</td></tr>
+  <tr><td>Managed by User</td><td>OS, apps, data, runtime</td><td>Apps and data only</td><td>Only data/settings</td></tr>
+  <tr><td>Managed by Provider</td><td>Hardware, virtualization, networking</td><td>+ OS, runtime, middleware</td><td>Everything (full stack)</td></tr>
+  <tr><td>Typical Users</td><td>System admins, IT teams</td><td>Developers</td><td>End users/businesses</td></tr>
+  <tr><td>Examples</td><td>AWS EC2, Azure VMs</td><td>Heroku, Google App Engine</td><td>Gmail, Dropbox, Netflix</td></tr>
+</table>
+
+<h3>4.5 Simple Analogy (Pizza-as-a-Service)</h3>
+<table>
+  <tr><th>Model</th><th>Analogy</th></tr>
+  <tr><td><span class="service">On-Premise (Traditional)</span></td><td>Making pizza at home from scratch (you do everything)</td></tr>
+  <tr><td><span class="service">IaaS</span></td><td>Buying a ready-made pizza base and toppings — you still bake it yourself (kitchen provided)</td></tr>
+  <tr><td><span class="service">PaaS</span></td><td>Ordering a "take and bake" pizza — you just heat it (kitchen + ingredients provided)</td></tr>
+  <tr><td><span class="service">SaaS</span></td><td>Ordering pizza delivery — it's made and delivered ready to eat (everything provided)</td></tr>
+</table>
+
+<hr>
+
+<h2>5. Deployment Models of Cloud (Bonus Context)</h2>
+<table>
+  <tr><th>Model</th><th>Description</th></tr>
+  <tr><td><span class="key">Public Cloud</span></td><td>Services offered over the public Internet, shared among multiple organizations (e.g., AWS, Google Cloud)</td></tr>
+  <tr><td><span class="key">Private Cloud</span></td><td>Dedicated cloud infrastructure used exclusively by a single organization</td></tr>
+  <tr><td><span class="key">Hybrid Cloud</span></td><td>A mix of public and private cloud, allowing data/apps to move between them</td></tr>
+  <tr><td><span class="key">Community Cloud</span></td><td>Shared infrastructure for a specific community of organizations with common concerns (e.g., government agencies)</td></tr>
+</table>
+
+<hr>
+
+<h2>6. Quick Summary Diagram</h2>
+<div class="code-block">
+          User Device (Browser/App)
+                    |
+                    v
+        Internet Connection (via ISP)
+                    |
+                    v
+   ┌─────────────────────────────────┐
+   │   CLOUD PROVIDER (Data Center)   │
+   │                                   │
+   │   SaaS  --> Ready-to-use Apps    │
+   │   PaaS  --> Development Platform │
+   │   IaaS  --> Raw Infrastructure   │
+   └─────────────────────────────────┘
+</div>
+
+<hr>
+
+<h2>7. Key Terms Glossary</h2>
+<table>
+  <tr><th>Term</th><th>Meaning</th></tr>
+  <tr><td><span class="term">Cloud Computing</span></td><td>Delivery of computing services over the Internet</td></tr>
+  <tr><td><span class="term">Scalability</span></td><td>Ability to increase/decrease resources based on demand</td></tr>
+  <tr><td><span class="term">Multi-Tenancy</span></td><td>Multiple users sharing the same physical infrastructure securely</td></tr>
+  <tr><td><span class="term">Virtualization</span></td><td>Creating virtual (rather than physical) versions of servers/storage</td></tr>
+  <tr><td><span class="term">Data Center</span></td><td>Facility housing the physical servers that power cloud services</td></tr>
+  <tr><td><span class="term">Sync</span></td><td>Automatically updating files across devices to keep them identical</td></tr>
+  <tr><td><span class="term">Uptime</span></td><td>The amount of time a cloud service is operational and accessible</td></tr>
+</table>
+
+<p style="text-align:center; margin-top:40px; color:#94a3b8;"><i>End of Notes</i></p>
+
+</body>
+</html>
