@@ -23,3 +23,33 @@
 | 16    | 50-55                               | Network Troubleshooting Basics – Common steps: checking cables, IP settings, restarting, Identifying connectivity issues using ping and tracert results                       |                                         |
 | 17    | 56-60                               | Cloud & Edge Computing: Role of networking in AI-driven cloud applications, AI & ML in Networking – Traffic prediction, anomaly detection, and network optimization using AI. |                                         |
 |       | Sessional Test - 1 (Lectures 31-60) |                                                                                                                                                                               |                                         |
+
+
+<div class="nav-buttons">
+  <a href="29. ML in Networking.md">← Prev</a>
+  <a href="index.md">Next →</a>
+</div>
+
+<style>
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* pushes one left, one right */
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-buttons a {
+  padding: 8px 16px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-buttons a:hover {
+  background: #e0e0e0;
+}
+</style>

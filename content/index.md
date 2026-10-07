@@ -78,4 +78,33 @@ Each note is kept short and focused so it can double as a quick-reference card w
 
 ---
 
+<div class="nav-buttons">
+  <a href="Proposed CN CHO.md">← Prev</a>
+  <a href="1. Intro to Networks.md">Next →</a>
+</div>
+
+<style>
+.nav-buttons {
+  display: flex;
+  justify-content: space-between; /* pushes one left, one right */
+  align-items: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+}
+
+.nav-buttons a {
+  padding: 8px 16px;
+  background: #f1f1f1;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-buttons a:hover {
+  background: #e0e0e0;
+}
+</style>
+
 _Notes compiled and maintained using Obsidian, published via Quartz._
